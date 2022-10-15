@@ -32,5 +32,13 @@ public class MyController {
         return "iterate";
     }
 
+    @GetMapping("/condition")
+    public String condition(Model model){
+        model.addAttribute("gender","M");
+        model.addAttribute("isActive",false);
+
+        return "condition";
+    }
+
 
 }
